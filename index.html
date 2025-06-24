@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Aplikasi Cuaca</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 2rem;
+    }
+    .hidden {
+        display: none;
+    }
+    #weather {
+        margin-top: 2rem;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 300px;
+    }
+    #icon {
+        width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Aplikasi Cuaca</h1>
+  <input type="text" id="city" placeholder="Masukkan nama kota" />
+  <button id="getWeather">Cari</button>
+
+  <div id="weather" class="hidden">
+    <h2 id="location">Nama Kota</h2>
+    <p id="temperature">Suhu: --</p>
+    <p id="description">Deskripsi cuaca</p>
+    <img id="icon" src="" alt="Ikon Cuaca" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
